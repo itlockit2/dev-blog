@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Yun Dev Blog",
+    siteUrl: `https://yun-dev.netlify.app/`
   },
   plugins: [
     "gatsby-plugin-postcss",
@@ -10,8 +11,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
-      },
+        icon: "src/images/icon.png"
+      }
     },
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
@@ -20,17 +21,17 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/images/"
       },
-      __key: "images",
+      __key: "images"
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pages",
-        path: "./src/pages/",
+        path: "./src/pages/"
       },
-      __key: "pages",
-    },
-  ],
+      __key: "pages"
+    }
+  ]
 };
